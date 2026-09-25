@@ -102,6 +102,8 @@ def get_course_stats():
             "success": False,
             "error": str(error)
         }), 500
+
+        
 @app.route("/api/courses/<int:course_id>", methods=["GET"])
 def get_course(course_id):
     try:
